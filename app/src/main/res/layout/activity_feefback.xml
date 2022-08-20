@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".sservicebooking.Service_booking">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FEEDBACK"
+                android:textSize="30dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal"
+            android:background="#25000000">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Pickup Technician"
+                android:textSize="20dp"
+                android:id="@+id/pickup"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="30"
+                    android:background="@drawable/backround"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="40"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="30"
+                    android:background="@drawable/backround"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:weightSum="100"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="30"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:text="Country"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="40"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="30"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:text="Speech"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="21"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Rating :"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:numStars="5"
+                        android:scaleX=".5"
+                        android:scaleY=".5"
+                        android:layout_height="wrap_content"
+                        ></RatingBar>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:orientation="horizontal"
+                android:background="#25000000">
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="DEALER"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="30"
+                    android:background="@drawable/backround"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="40"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="30"
+                    android:background="@drawable/backround"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="30"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:text="Repair cost"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="33"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="37"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:text="Repair Quality"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="30"
+                    android:background="@drawable/backround"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="40"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="30"
+                    android:background="@drawable/backround"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="30"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:text="Washing"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="33"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="37"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:text="Delivery Time"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="21"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Rating :"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_height="250dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:numStars="5"
+                        android:scaleX=".5"
+                        android:scaleY=".5"
+                        android:layout_height="wrap_content"
+                        ></RatingBar>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:orientation="horizontal"
+                android:background="#25000000">
+            </LinearLayout>
+            <Button
+                android:layout_width="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/conform"
+                android:layout_gravity="center"
+                android:backgroundTint="#2E7D32"
+                android:gravity="center"
+                android:text="Submit"></Button>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

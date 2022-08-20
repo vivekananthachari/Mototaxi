@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".historydata.history">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="VEHICLES"
+                android:textSize="30dp"
+                android:layout_weight="80"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="20"
+                android:id="@+id/edit_vech"
+                android:src="@drawable/editvh"
+                ></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal"
+            android:background="#25000000">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/vech"
+                ></ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:src="@drawable/vertical"
+                ></ImageView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_vecharrow"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="Vehicle Number">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:id="@+id/vech1"
+                    android:text="TN45288888"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#7000"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_vecharrowbut"
+                android:src="@android:drawable/ic_search_category_default"
+
+                ></ImageView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+            android:background="#25000000">
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="54"
+            android:layout_margin="10dp"
+            android:id="@+id/vechilerecyclier">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+<!--        <GridView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="27"-->
+<!--            android:horizontalSpacing="6dp"-->
+<!--            android:verticalSpacing="6dp"-->
+<!--            android:numColumns="3"-->
+<!--            android:id="@+id/listitem"-->
+<!--            android:layout_margin="3dp"-->
+<!--            android:src="@drawable/imgdata"-->
+<!--            ></GridView>-->
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14"
+            android:numColumns="3"
+            android:horizontalSpacing="6dp"
+            android:id="@+id/listitem1"
+            android:layout_margin="3dp"
+            android:src="@drawable/imggg"
+            ></GridView>'
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#32000000"></LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            style="@style/MyBottomNavigationView"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_navigation_menu"
+            app:itemIconSize="40dp"
+            android:background="@color/white"
+            app:itemTextColor="#7000"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

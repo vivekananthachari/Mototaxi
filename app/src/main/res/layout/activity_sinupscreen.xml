@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".signup.Sinupscreen">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="80dp"
+    android:src="@drawable/taxiloo"
+    ></ImageView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:id="@+id/mainlayoutsig"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:textSize="40dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:text="@string/title"></TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:id="@+id/logosu"
+            >
+
+        </ImageView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/mainlayoutsig"
+        android:padding="10dp"
+        android:layout_marginTop="430dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:id="@+id/useeraccount"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:text="@string/user_account"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:maxLines="2"
+            android:id="@+id/useeraccountnote"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:text="@string/user_accountnote"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:outlineSpotShadowColor="#002060"
+            android:shadowColor="#002060"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/submit"
+            android:layout_gravity="center"
+            android:text="SIGN IN"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="#7000">
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:id="@+id/sendfeedbacksu"
+            android:textStyle="bold"
+            android:text="@string/send_feedback">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="16dp"
+            android:textColor="#7000"
+            android:layout_marginBottom="15dp"
+            android:text="@string/user_account"
+            android:id="@+id/appversionsu"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

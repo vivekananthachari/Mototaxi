@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_1"
+        android:enabled="true"
+        android:title=""
+        android:iconTint="@color/black"
+        android:icon="@drawable/homenew" />
+    <item
+        android:id="@+id/page_2"
+        android:enabled="true"
+        android:iconTint="@color/black"
+        android:icon="@drawable/list"
+        android:title="" />
+    <item
+        android:id="@+id/page_3"
+        android:enabled="true"
+        android:iconTint="@color/black"
+        android:icon="@drawable/bell"
+        android:title="" />
+    <item
+        android:id="@+id/page_4"
+        android:enabled="true"
+        android:iconTint="@color/black"
+        android:icon="@drawable/timenew"
+        android:title="" />
+</menu>

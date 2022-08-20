@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="#ffffffff">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#37B7C8"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:id="@+id/text1"
+        android:textColor="@color/white"
+        android:outlineSpotShadowColor="@color/black"
+        android:inputType="text"
+        android:text="Privacy and Policy"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:id="@+id/text3"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:lines="4"
+        android:text="Please accept the privacy and policy get to enable the data Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        android:layout_height="wrap_content"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="10">
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/check"
+            android:layout_weight="8" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:text="Agree to enable the button" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="100"
+            android:enabled="false"
+            android:text="OK"
+            android:gravity="center"
+            android:outlineSpotShadowColor="#002060"
+            android:shadowColor="#002060"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/ok"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/backgroundnew"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".sservicebooking.Service_booking">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SERVICE TRACKING"
+                android:textSize="30dp"
+                android:layout_weight="100"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal"
+            android:background="#25000000">
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_marginTop="5dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            tools:context=".Home.Dashboard" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="60"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:background="@drawable/borderorange"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_checkbox_selected"
+                android:text="Pickup Tracking"
+                android:textSize="20dp"
+                android:id="@+id/pickup"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:id="@+id/recyclier"
+                android:visibility="gone"
+                android:layout_weight="68">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:background="@drawable/borderorange"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_checkbox_selected"
+                android:text="Service Status"
+                android:id="@+id/service"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:id="@+id/recyclier1"
+                android:visibility="gone"
+                android:layout_weight="68">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:id="@+id/deliver"
+                android:background="@drawable/borderorange"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_checkbox_selected"
+                android:text="Delivery Tracking"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:id="@+id/recyclier2"
+                android:visibility="gone"
+                android:layout_weight="68">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

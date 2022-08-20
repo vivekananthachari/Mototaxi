@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SET LOCATION"
+                android:textSize="30dp"
+                android:layout_weight="100"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal"
+            android:background="#25000000">
+        </LinearLayout>
+        <fragment
+            android:id="@+id/map"
+            android:layout_marginTop="5dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            tools:context=".Home.Dashboard" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:weightSum="100"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:weightSum="100"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="NEW PET"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/title"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="82"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Change"
+                    android:textColor="#D84315"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backround"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="18"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="80"
+                android:weightSum="100"
+                android:orientation="vertical"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="93, new street"
+                    android:textColor="#D8000000"
+                    android:layout_margin="10dp"
+                    android:id="@+id/adddres"
+                    android:layout_height="0dp"
+                    android:layout_weight="30"></TextView>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="35"
+                    android:textSize="18dp"
+                    android:padding="10dp"
+                    android:outlineSpotShadowColor="#002060"
+                    android:shadowColor="#002060"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/submit"
+                    android:layout_gravity="center"
+                    android:text="Set"></Button>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:orientation="horizontal"
+                    android:background="#25000000">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="35"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:background="#7000"
+                        android:gravity="center"
+                        android:text="Select Saved Address"></TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

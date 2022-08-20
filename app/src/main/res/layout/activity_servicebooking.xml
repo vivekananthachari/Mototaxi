@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".sservicebooking.Service_booking">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SERVICE BOOKING"
+                android:textSize="30dp"
+                android:layout_weight="100"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal"
+            android:background="#25000000">
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:padding="5dp"
+        android:id="@+id/main"
+        app:cardCornerRadius="10dp"
+        android:background="@drawable/backround"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:text="Maruti Suzuki wegon"
+                        android:id="@+id/model"
+                        android:layout_weight="1000"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Petrol"
+                    android:textSize="18dp"
+                    android:id="@+id/type"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="TN2460549595"
+                    android:textSize="18dp"
+                    android:id="@+id/number"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_margin="10dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mycarnewww"></ImageView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:padding="5dp"
+        android:id="@+id/main1"
+        app:cardCornerRadius="10dp"
+        android:background="@drawable/backround"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:text="Breakdown Assistance"
+                        android:layout_weight="70"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:text="Rs.500"
+                        android:layout_weight="1000"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="18dp"
+                    android:hint="Any other request Mention here..."
+                    android:id="@+id/query"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:padding="5dp"
+        android:id="@+id/main2"
+        app:cardCornerRadius="10dp"
+        android:background="@drawable/backround"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:text="Date and Time : "
+                        android:layout_weight="40"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:text="Jan 20 | 10AM - 12AM"
+                        android:layout_weight="60"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:padding="5dp"
+        app:cardCornerRadius="10dp"
+        android:background="@drawable/backround"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="10"
+                        android:src="@drawable/locamapicon"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:text="Apply coupon"
+                        android:layout_weight="70"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="30"
+                        android:src="@drawable/arrownew"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:padding="5dp"
+        app:cardCornerRadius="10dp"
+        android:background="@drawable/backround"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="120"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Bill Details"
+                    android:textStyle="bold"
+                    android:layout_weight="20"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:layout_weight="70"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 5000"
+                        android:layout_weight="30"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pickup / Drop Fee"
+                        android:layout_weight="70"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 50"
+                        android:layout_weight="30"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tax and Charges"
+                        android:layout_weight="70"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 5"
+                        android:layout_weight="30"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Discount"
+                        android:layout_weight="70"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 0"
+                        android:layout_weight="30"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="To Pay"
+                        android:layout_weight="70"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 550"
+                        android:textStyle="bold"
+                        android:layout_weight="30"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/quantum_googgreen"
+        android:id="@+id/conform"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        ></Button>
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

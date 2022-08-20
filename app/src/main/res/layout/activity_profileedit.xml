@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".profiledata.Profileedit">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCOUNT"
+            android:textSize="30dp"
+            android:layout_weight="80"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/edit"
+            android:layout_marginTop="10dp"
+            android:layout_weight="20"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/profile"
+            ></de.hdodenhof.circleimageview.CircleImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal"
+        android:background="#25000000">
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/tttt"
+        ></de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:text="ARIVUKANI"
+                android:textSize="20dp"
+                android:id="@+id/name"
+                android:hint="Enter Name"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:text="MOBILE"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_marginRight="10dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:text="9952105977"
+                android:hint="Enter Mobile number"
+                android:textSize="20dp"
+                android:id="@+id/number"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:text="EMAIL"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:hint="Enter Email Address"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:text="varivukani@gmail.com"
+                android:textSize="20dp"
+                android:id="@+id/email"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#83000000">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MANAGE ADDRESS"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:id="@+id/recyclier">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD NEW ADDRESS"
+        android:id="@+id/newaddress"
+        android:background="@drawable/bordergreen"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textColor="#4CAF50"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:outlineSpotShadowColor="#002060"
+        android:shadowColor="#002060"
+        android:textColor="@color/white"
+        android:id="@+id/save"
+        android:layout_gravity="center"
+        android:text="SAVE"></Button>
+
+</LinearLayout>
+
+
+
+
+

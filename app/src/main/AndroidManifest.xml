@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mototaxi">
+
+    <application
+        android:name=".volley.VolleyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/img"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/img"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Motoservice"
+        android:usesCleartextTraffic="true">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".notification.Notify"
+            android:exported="false" />
+
+        <activity
+            android:name=".fastag.Fastag_activity"
+            android:exported="false" />
+        <activity
+            android:name=".teackdata.Tracking_activity"
+            android:exported="false" />
+        <activity
+            android:name=".servicecost.ServicecostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".breakdownassistant.Noofdelearlist"
+            android:exported="false" />
+        <activity
+            android:name=".breakdownassistant.Breakdown_booking"
+            android:exported="false" />
+        <activity
+            android:name=".sservicebooking.Feefback"
+            android:exported="false" />
+        <activity
+            android:name=".sservicebooking.Service_tracking"
+            android:exported="false" />
+        <activity
+            android:name=".sservicebooking.Bookingconform"
+            android:exported="false" />
+        <activity
+            android:name=".sservicebooking.Servicebooking"
+            android:exported="false" />
+        <activity
+            android:name=".sservicebooking.Delarlocation"
+            android:exported="false" />
+        <activity
+            android:name=".sservicebooking.Newlistofshpos"
+            android:exported="false" />
+        <activity
+            android:name=".breakdownassistant.Job_activity"
+            android:exported="false" />
+        <activity
+            android:name=".sservicebooking.Service_booking"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".fual.Fualscreen"
+            android:exported="false" />
+        <activity
+            android:name=".faqdata.Faq"
+            android:exported="false" />
+        <activity
+            android:name=".analytics.Analtic"
+            android:exported="false" />
+        <activity
+            android:name=".vechicledata.Vechile_edit"
+            android:exported="false" />
+        <activity
+            android:name=".vechicledata.Vechile"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".historydata.history"
+            android:exported="false" />
+        <activity
+            android:name=".walletdata.Virtualpayments"
+            android:exported="false" />
+        <activity
+            android:name=".walletdata.Wallet"
+            android:exported="false" />
+        <activity
+            android:name=".profiledata.Profileedit"
+            android:exported="false" />
+        <activity
+            android:name=".profiledata.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".breakdownassistant.Maplocation"
+            android:exported="false" />
+        <activity
+            android:name=".sservicebooking.Maplocation"
+            android:exported="false" />
+        <activity
+            android:name=".dashboaddata.Dashboard"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".signup.Otpscreen"
+            android:exported="true" />
+        <activity
+            android:name=".signup.Sinupscreen"
+            android:exported="true" />
+        <activity
+            android:name=".signup.Flashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".signup.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".profiledata.MapsActivity" />
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".odb.MainActivitynew"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+
+        <activity
+            android:name=".odb.UsbDeviceListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/select_device" />
+
+        <activity
+            android:name=".odb.BtDeviceListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/select_device" />
+
+        <activity
+            android:name=".odb.ChartActivity"
+            android:configChanges="touchscreen|orientation|screenSize"
+            android:label="@string/chart" />
+        <activity
+            android:name=".odb.DashBoardActivity"
+            android:configChanges="touchscreen|orientation|screenSize"
+            android:label="@string/dashboard" />
+        <activity
+            android:name=".odb.SettingsActivity"
+            android:configChanges="touchscreen|orientation|screenSize"
+            android:label="@string/settings" />
+        <activity
+            android:name=".odb.PidCustomization"
+            android:configChanges="touchscreen|orientation|screenSize"
+            android:label="@string/customize_display" />
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity android:name=".walletdata.paytm.checksum" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.truecaller.android.sdk.PartnerKey"
+            android:value="@string/partnerKey" />
+        <service android:name=".faqdata.GetAddressIntentService" />
+    </application>
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- connect/disconnect bluetooth devices -->
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- to keep Bluetooth measurement running even when screen is inactive -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- allow saving screenshots -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- allow saving screenshots -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- allow access to WIFI adapter -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk tools:overrideLibrary="com.truecaller.android.sdk" />
+
+</manifest>

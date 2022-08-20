@@ -1,0 +1,108 @@
+com/fr3ts0n/pvs/io/PvXMLWriter.java
+ com.fr3ts0n.pvs.io.PvXMLWriter
+com/fr3ts0n/pvs/IndexedProcessVar.java
+ com.fr3ts0n.pvs.IndexedProcessVar
+com/fr3ts0n/ecu/NumericConversion.java
+ com.fr3ts0n.ecu.NumericConversion
+com/fr3ts0n/ecu/ObdCodeList.java
+ com.fr3ts0n.ecu.ObdCodeList
+com/fr3ts0n/pvs/PvChangeListener.java
+ com.fr3ts0n.pvs.PvChangeListener
+com/fr3ts0n/common/package-info.java
+ com.fr3ts0n.common.package-info
+com/fr3ts0n/ecu/IntConversion.java
+ com.fr3ts0n.ecu.IntConversion
+com/fr3ts0n/prot/TelegramWriter.java
+ com.fr3ts0n.prot.TelegramWriter
+com/fr3ts0n/ecu/Conversions.java
+ com.fr3ts0n.ecu.Conversions
+com/fr3ts0n/prot/TelegramSender.java
+ com.fr3ts0n.prot.TelegramSender
+com/fr3ts0n/ecu/EcuCodeItem.java
+ com.fr3ts0n.ecu.EcuCodeItem
+com/fr3ts0n/common/UTF8Bundle.java
+ com.fr3ts0n.common.UTF8Bundle
+com/fr3ts0n/prot/UdpInputStream.java
+ com.fr3ts0n.prot.UdpInputStream
+ com.fr3ts0n.prot.UdpInputStream$1
+com/fr3ts0n/pvs/DataMapHandler.java
+ com.fr3ts0n.pvs.DataMapHandler
+com/fr3ts0n/ecu/prot/obd/CanProtFord.java
+ com.fr3ts0n.ecu.prot.obd.CanProtFord
+com/fr3ts0n/pvs/ProcessVar.java
+ com.fr3ts0n.pvs.ProcessVar
+com/fr3ts0n/prot/FtpLoader.java
+ com.fr3ts0n.prot.FtpLoader
+com/fr3ts0n/ecu/prot/obd/Messages.java
+ com.fr3ts0n.ecu.prot.obd.Messages
+com/fr3ts0n/pvs/PvChangeEvent.java
+ com.fr3ts0n.pvs.PvChangeEvent
+com/fr3ts0n/ecu/ObdVidItem.java
+ com.fr3ts0n.ecu.ObdVidItem
+com/fr3ts0n/ecu/EcuConversions.java
+ com.fr3ts0n.ecu.EcuConversions
+com/fr3ts0n/ecu/prot/obd/res/package-info.java
+ com.fr3ts0n.ecu.prot.obd.res.package-info
+com/fr3ts0n/ecu/EcuDataItems.java
+ com.fr3ts0n.ecu.EcuDataItems
+ com.fr3ts0n.ecu.EcuDataItems$FLD
+com/fr3ts0n/ecu/EcuDataPv.java
+ com.fr3ts0n.ecu.EcuDataPv
+com/fr3ts0n/ecu/prot/package-info.java
+ com.fr3ts0n.ecu.prot.package-info
+com/fr3ts0n/ecu/EcuDataItem.java
+ com.fr3ts0n.ecu.EcuDataItem
+com/fr3ts0n/prot/StreamHandler.java
+ com.fr3ts0n.prot.StreamHandler
+ com.fr3ts0n.prot.StreamHandler$1
+com/fr3ts0n/common/UTF8Control.java
+ com.fr3ts0n.common.UTF8Control
+com/fr3ts0n/ecu/LinearConversion.java
+ com.fr3ts0n.ecu.LinearConversion
+com/fr3ts0n/ecu/prot/obd/ElmProt.java
+ com.fr3ts0n.ecu.prot.obd.ElmProt
+ com.fr3ts0n.ecu.prot.obd.ElmProt$1
+ com.fr3ts0n.ecu.prot.obd.ElmProt$AdaptTimingMode
+ com.fr3ts0n.ecu.prot.obd.ElmProt$AdaptiveTiming
+ com.fr3ts0n.ecu.prot.obd.ElmProt$CMD
+ com.fr3ts0n.ecu.prot.obd.ElmProt$PROT
+ com.fr3ts0n.ecu.prot.obd.ElmProt$RSP_ID
+ com.fr3ts0n.ecu.prot.obd.ElmProt$STAT
+com/fr3ts0n/ecu/BitmapConversion.java
+ com.fr3ts0n.ecu.BitmapConversion
+com/fr3ts0n/prot/TelegramListener.java
+ com.fr3ts0n.prot.TelegramListener
+com/fr3ts0n/ecu/prot/obd/CanProt.java
+ com.fr3ts0n.ecu.prot.obd.CanProt
+com/fr3ts0n/pvs/PvList.java
+ com.fr3ts0n.pvs.PvList
+com/fr3ts0n/ecu/ObdCodeItem.java
+ com.fr3ts0n.ecu.ObdCodeItem
+com/fr3ts0n/ecu/Conversion.java
+ com.fr3ts0n.ecu.Conversion
+com/fr3ts0n/prot/SerialExt.java
+ com.fr3ts0n.prot.SerialExt
+com/fr3ts0n/ecu/prot/obd/ObdProt.java
+ com.fr3ts0n.ecu.prot.obd.ObdProt
+ com.fr3ts0n.ecu.prot.obd.ObdProt$1
+ com.fr3ts0n.ecu.prot.obd.ObdProt$NRC
+ com.fr3ts0n.ecu.prot.obd.ObdProt$NRC$DISP
+ com.fr3ts0n.ecu.prot.obd.ObdProt$NRC$REACT
+com/fr3ts0n/pvs/io/PvXMLHandler.java
+ com.fr3ts0n.pvs.io.PvXMLHandler
+com/fr3ts0n/pvs/DbProcessVar.java
+ com.fr3ts0n.pvs.DbProcessVar
+com/fr3ts0n/prot/ProtoHeader.java
+ com.fr3ts0n.prot.ProtoHeader
+com/fr3ts0n/ecu/EcuCodeList.java
+ com.fr3ts0n.ecu.EcuCodeList
+com/fr3ts0n/ecu/VagConversion.java
+ com.fr3ts0n.ecu.VagConversion
+com/fr3ts0n/pvs/PvLimits.java
+ com.fr3ts0n.pvs.PvLimits
+com/fr3ts0n/prot/ProtUtils.java
+ com.fr3ts0n.prot.ProtUtils
+com/fr3ts0n/ecu/prot/obd/package-info.java
+ com.fr3ts0n.ecu.prot.obd.package-info
+com/fr3ts0n/ecu/HashConversion.java
+ com.fr3ts0n.ecu.HashConversion

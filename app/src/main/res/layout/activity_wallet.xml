@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".walletdata.Wallet">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="WALLET"
+                android:textSize="30dp"
+                android:layout_weight="70"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:src="@drawable/wallet"></ImageView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal"
+            android:background="#25000000">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:src="@drawable/wallet"></ImageView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_weight="30"
+                android:text="\u20B9 100.0"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:layout_weight="40"
+                android:text="ADD MONEY"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:background="#83000000">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREDIT/DEBIT CARDS"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:padding="10dp"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="20"
+                android:layout_gravity="left"
+                android:src="@drawable/credit"></ImageView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:layout_marginRight="60dp"
+                android:textColor="@color/black"
+                android:gravity="right"
+                android:layout_weight="80"
+                android:text="LINK"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:background="#83000000">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIRTUAL PAYMENTS"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"
+                android:id="@+id/vitual"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_weight="31"
+         >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:weightSum="100"
+             android:layout_height="wrap_content"
+             android:id="@+id/vitual1"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="15dp"
+             android:orientation="horizontal">
+             <ImageView
+                 android:layout_width="0dp"
+                 android:layout_weight="20"
+                 android:layout_height="40dp"
+                 android:layout_gravity="left"
+                 android:src="@drawable/bhmi"></ImageView>
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:textSize="18dp"
+                 android:layout_marginRight="60dp"
+                 android:textColor="@color/black"
+                 android:gravity="right"
+                 android:layout_weight="80"
+                 android:text="LINK"></TextView>
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:weightSum="100"
+             android:layout_height="wrap_content"
+             android:id="@+id/vitual2"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="20dp"
+             android:orientation="horizontal">
+             <ImageView
+                 android:layout_width="0dp"
+                 android:layout_height="40dp"
+                 android:layout_weight="20"
+                 android:layout_gravity="left"
+                 android:src="@drawable/paytm"></ImageView>
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:textSize="18dp"
+                 android:layout_marginRight="60dp"
+                 android:textColor="@color/black"
+                 android:gravity="right"
+                 android:layout_weight="80"
+                 android:text="LINK"></TextView>
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:weightSum="100"
+             android:id="@+id/vitual3"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="20dp"
+             android:orientation="horizontal">
+             <ImageView
+                 android:layout_width="0dp"
+                 android:layout_height="40dp"
+                 android:layout_weight="20"
+                 android:layout_gravity="left"
+                 android:src="@drawable/gpay"></ImageView>
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:textSize="18dp"
+                 android:layout_marginRight="60dp"
+                 android:textColor="@color/black"
+                 android:gravity="right"
+                 android:layout_weight="80"
+                 android:text="LINK"></TextView>
+
+         </LinearLayout>
+
+     </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#32000000"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            style="@style/MyBottomNavigationView"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_navigation_menu"
+            app:itemIconSize="40dp"
+            android:background="@color/white"
+            app:itemTextColor="#7000"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

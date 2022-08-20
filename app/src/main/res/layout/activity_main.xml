@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".signup.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:padding="20dp"
+      />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img"
+        >
+
+    </ImageView>
+
+
+        <ImageView
+            android:id="@+id/login_with_truecaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:padding="8dp"
+            android:src="@drawable/img_1"
+            android:text="Login With TrueCaller"
+            android:textColor="@color/white"
+             />
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="OR"
+    android:textColor="@color/black"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+    android:textSize="18dp"></TextView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="15dp"
+    >
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="3dp"
+        android:layout_gravity="center"
+        android:src="@drawable/country_flag_in"
+        ></ImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91"
+        android:textSize="18dp"
+        android:visibility="gone"
+        android:layout_margin="3dp"
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:textColorHint="#7000"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:id="@+id/phonenuber"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:hint="@string/Continue"></EditText>
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#B4002060"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Used Login via email?"></TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7000"
+        android:layout_marginTop="60dp"
+        android:textSize="14dp"
+        android:layout_gravity="center"
+        android:id="@+id/agree"
+        android:gravity="center"
+        android:text="@string/aggery"></TextView>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:outlineSpotShadowColor="#002060"
+        android:shadowColor="#002060"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:id="@+id/otp"
+        android:layout_gravity="center"
+        android:text="SEND OTP"></Button>
+
+</LinearLayout>
